@@ -133,7 +133,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/ReactNative/" style="font-size: 10px;">ReactNative</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+                        <a href="/tags/ReactNative/" style="font-size: 20px;">ReactNative</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
                     </div>
                 </section>
                 
@@ -206,6 +206,190 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-github加速" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/22/github加速/" class="article-date">
+      <time datetime="2016-12-22T08:15:16.000Z" itemprop="datePublished">2016-12-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/22/github加速/">github加速</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="github加速"><a href="#github加速" class="headerlink" title="github加速"></a>github加速</h1><p>一般Github的访问有两部分：主站的访问和二级域名的资源加载（比如样式文件等）。</p>
+<p>为什么慢？因为github的CDN被某墙屏了。</p>
+<p>那么有vpn服务的可以直接使用vpn，没有vpn的，可以绕过dns解析，在本地直接绑定host</p>
+<blockquote>
+<p>找到最快的ip</p>
+</blockquote>
+<p>用站长工具的DNS查询，查找tel最小的IP地址</p>
+<ul>
+<li>192.30.253.113 www.github.com</li>
+<li>151.101.192.133 documentcloud.github.com</li>
+<li>192.30.253.113 github.com</li>
+<li>151.101.192.133 assets-cdn.github.com</li>
+<li>151.101.192.133 avatars0.githubusercontent.com </li>
+<li>151.101.192.133 avatars1.githubusercontent.com </li>
+<li>8.7.198.45 gist.github.com</li>
+<li>151.101.192.133 help.github.com</li>
+<li>192.30.253.121 nodeload.github.com</li>
+<li>151.101.192.133 raw.github.com</li>
+<li>23.21.205.246 status.github.com</li>
+<li>151.101.100.133 training.github.com</li>
+<li>151.101.88.249 github.global.ssl.fastly.net</li>
+</ul>
+<blockquote>
+<p>修改hosts</p>
+</blockquote>
+<p>1.在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑</p>
+<p>2.插入上述查找到的ip地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># github</div><div class="line">192.30.253.113 www.github.com</div><div class="line">151.101.192.133 documentcloud.github.com</div><div class="line">192.30.253.113 github.com</div><div class="line">151.101.192.133 assets-cdn.github.com</div><div class="line">151.101.192.133 avatars0.githubusercontent.com</div><div class="line">151.101.192.133 avatars1.githubusercontent.com</div><div class="line">8.7.198.45 gist.github.com</div><div class="line">151.101.192.133 help.github.com</div><div class="line">192.30.253.121 nodeload.github.com</div><div class="line">151.101.192.133 raw.github.com</div><div class="line">23.21.205.246 status.github.com</div><div class="line">151.101.100.133 training.github.com</div><div class="line">151.101.88.249 github.global.ssl.fastly.net</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/开发/">开发</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-RN项目框架搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/22/RN项目框架搭建/" class="article-date">
+      <time datetime="2016-12-22T06:53:44.000Z" itemprop="datePublished">2016-12-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/22/RN项目框架搭建/">RN项目框架搭建</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>#RN项目框架搭建</p>
+<blockquote>
+<p>主框架</p>
+</blockquote>
+<ul>
+<li>采用<code>react-native + react-redux + axios</code>分别实现视图层、逻辑层、数据通信层；</li>
+<li>采用<code>realm + storage</code>做本地存储；</li>
+<li>采用<code>react-native-router-flux</code>实现路由功能；</li>
+</ul>
+<blockquote>
+<p>目录结构</p>
+</blockquote>
+<ul>
+<li>app<ul>
+<li>assets <em>图片资源</em></li>
+<li>component <em>组件</em></li>
+<li>core <em>核心组件</em></li>
+<li>pages <em>页面</em></li>
+<li>theme <em>主题</em></li>
+<li>utils <em>工具类</em></li>
+</ul>
+</li>
+<li>biz<ul>
+<li>actions <em>请求action</em></li>
+<li>api <em>api接口</em></li>
+<li>entity <em>本地存储entity</em></li>
+<li>middleware <em>redux中间件</em></li>
+<li>reducers <em>redux的reducer</em></li>
+<li>repository <em>本地存储</em></li>
+<li>socket <em>socket封装</em></li>
+<li>errors <em>请求错误处理</em></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/开发/">开发</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ReactNative/">ReactNative</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
   
     <article id="post-关于RN的主题化实现" class="article article-type-post" itemscope itemprop="blogPost">
   

@@ -3,15 +3,75 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | logicool</title>
+  <title>RN项目框架搭建 | logicool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://logicool.github.io/about/index.html">
+  <meta name="description" content="#RN项目框架搭建
+
+主框架
+
+
+采用react-native + react-redux + axios分别实现视图层、逻辑层、数据通信层；
+采用realm + storage做本地存储；
+采用react-native-router-flux实现路由功能；
+
+
+目录结构
+
+
+app
+assets 图片资源
+component 组件
+core 核心组件
+pages 页面
+theme 主题
+util">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RN项目框架搭建">
+<meta property="og:url" content="https://logicool.github.io/2016/12/22/RN项目框架搭建/index.html">
 <meta property="og:site_name" content="logicool">
-<meta property="og:updated_time" content="2016-12-03T07:06:24.000Z">
+<meta property="og:description" content="#RN项目框架搭建
+
+主框架
+
+
+采用react-native + react-redux + axios分别实现视图层、逻辑层、数据通信层；
+采用realm + storage做本地存储；
+采用react-native-router-flux实现路由功能；
+
+
+目录结构
+
+
+app
+assets 图片资源
+component 组件
+core 核心组件
+pages 页面
+theme 主题
+util">
+<meta property="og:updated_time" content="2016-12-22T07:27:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="RN项目框架搭建">
+<meta name="twitter:description" content="#RN项目框架搭建
+
+主框架
+
+
+采用react-native + react-redux + axios分别实现视图层、逻辑层、数据通信层；
+采用realm + storage做本地存储；
+采用react-native-router-flux实现路由功能；
+
+
+目录结构
+
+
+app
+assets 图片资源
+component 组件
+core 核心组件
+pages 页面
+theme 主题
+util">
   
   
     <link rel="icon" href="http://ohlmilmdr.bkt.clouddn.com/images/head.jpeg">
@@ -31,7 +91,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -203,11 +263,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-RN项目框架搭建" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-12-03T07:06:24.000Z" itemprop="datePublished">2016-12-03</time>
+      <a href="/2016/12/22/RN项目框架搭建/" class="article-date">
+      <time datetime="2016-12-22T06:53:44.000Z" itemprop="datePublished">2016-12-22</time>
 </a>
     </div>
   
@@ -220,7 +280,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      RN项目框架搭建
     </h1>
   
 
@@ -228,8 +288,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/开发/">开发</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ReactNative/">ReactNative</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -237,52 +305,131 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
+        <p>#RN项目框架搭建</p>
+<blockquote>
+<p>主框架</p>
+</blockquote>
+<ul>
+<li>采用<code>react-native + react-redux + axios</code>分别实现视图层、逻辑层、数据通信层；</li>
+<li>采用<code>realm + storage</code>做本地存储；</li>
+<li>采用<code>react-native-router-flux</code>实现路由功能；</li>
+</ul>
+<blockquote>
+<p>目录结构</p>
+</blockquote>
+<ul>
+<li>app<ul>
+<li>assets <em>图片资源</em></li>
+<li>component <em>组件</em></li>
+<li>core <em>核心组件</em></li>
+<li>pages <em>页面</em></li>
+<li>theme <em>主题</em></li>
+<li>utils <em>工具类</em></li>
+</ul>
+</li>
+<li>biz<ul>
+<li>actions <em>请求action</em></li>
+<li>api <em>api接口</em></li>
+<li>entity <em>本地存储entity</em></li>
+<li>middleware <em>redux中间件</em></li>
+<li>reducers <em>redux的reducer</em></li>
+<li>repository <em>本地存储</em></li>
+<li>socket <em>socket封装</em></li>
+<li>errors <em>请求错误处理</em></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+</blockquote>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/12/22/RN项目框架搭建/">RN项目框架搭建</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Han Gao 的个人博客">Han Gao</a></p>
+        <p><span>发布时间:</span>2016年12月22日 - 14时53分</p>
+        <p><span>最后更新:</span>2016年12月22日 - 15时27分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/22/RN项目框架搭建/" title="RN项目框架搭建">https://logicool.github.io/2016/12/22/RN项目框架搭建/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://logicool.github.io/2016/12/22/RN项目框架搭建/　　作者: Han Gao" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/12/22/github加速/">
+                    github加速
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/12/22/关于RN的主题化实现/">
+                    关于RN的主题化实现
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
 
 
 <div class="share">
@@ -305,7 +452,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="https://logicool.github.io/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="2016/12/22/RN项目框架搭建/" data-title="RN项目框架搭建" data-url="https://logicool.github.io/2016/12/22/RN项目框架搭建/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -324,6 +471,46 @@
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/12/22/github加速/" title="上一篇: github加速">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/12/22/关于RN的主题化实现/" title="下一篇: 关于RN的主题化实现">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/22/github加速/">github加速</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/22/RN项目框架搭建/">RN项目框架搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/22/关于RN的主题化实现/">关于RN的主题化实现</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/16/开始博客/">开始博客</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
 
