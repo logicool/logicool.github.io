@@ -5,22 +5,22 @@
   
   <title>关于RN的主题化实现 | logicool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="痛点
+  <meta name="description" content="&amp;#x75DB;&amp;#x70B9;
 
-开发了几个工程后，越发觉得react-native在app初始阶段的快速迭代开发有不十分巨大的优势。然而开发中遇到的问题也比较多，例如性能问题，组件问题，主题问题，开发规范问题，多人协作问题等等。今天主要说下主题的问题吧。在很多开发中，我们都需要指定一些通用的页面式样，比如：背景颜色，标题字体大小及颜色，默认字体等等。这些听起来在css上很容易实现，但是在RN上却不能简单的做到，虽然可以">
+&amp;#x5F00;&amp;#x53D1;&amp;#x4E86;&amp;#x51E0;&amp;#x4E2A;&amp;#x5DE5;&amp;#x7A0B;&amp;#x540E;&amp;#xFF0C;&amp;#x8D8A;&amp;#x53D1;&amp;#x89C9;&amp;#x5F97;react-native&amp;#x5728;app&amp;#x521D;&amp;#x59CB;&amp;#x9636;&amp;#x6BB5;&amp;#x7684;&amp;#x5FEB;&amp;#x901">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于RN的主题化实现">
 <meta property="og:url" content="https://logicool.github.io/2016/12/22/关于RN的主题化实现/index.html">
 <meta property="og:site_name" content="logicool">
-<meta property="og:description" content="痛点
+<meta property="og:description" content="&amp;#x75DB;&amp;#x70B9;
 
-开发了几个工程后，越发觉得react-native在app初始阶段的快速迭代开发有不十分巨大的优势。然而开发中遇到的问题也比较多，例如性能问题，组件问题，主题问题，开发规范问题，多人协作问题等等。今天主要说下主题的问题吧。在很多开发中，我们都需要指定一些通用的页面式样，比如：背景颜色，标题字体大小及颜色，默认字体等等。这些听起来在css上很容易实现，但是在RN上却不能简单的做到，虽然可以">
+&amp;#x5F00;&amp;#x53D1;&amp;#x4E86;&amp;#x51E0;&amp;#x4E2A;&amp;#x5DE5;&amp;#x7A0B;&amp;#x540E;&amp;#xFF0C;&amp;#x8D8A;&amp;#x53D1;&amp;#x89C9;&amp;#x5F97;react-native&amp;#x5728;app&amp;#x521D;&amp;#x59CB;&amp;#x9636;&amp;#x6BB5;&amp;#x7684;&amp;#x5FEB;&amp;#x901">
 <meta property="og:updated_time" content="2016-12-22T04:25:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于RN的主题化实现">
-<meta name="twitter:description" content="痛点
+<meta name="twitter:description" content="&amp;#x75DB;&amp;#x70B9;
 
-开发了几个工程后，越发觉得react-native在app初始阶段的快速迭代开发有不十分巨大的优势。然而开发中遇到的问题也比较多，例如性能问题，组件问题，主题问题，开发规范问题，多人协作问题等等。今天主要说下主题的问题吧。在很多开发中，我们都需要指定一些通用的页面式样，比如：背景颜色，标题字体大小及颜色，默认字体等等。这些听起来在css上很容易实现，但是在RN上却不能简单的做到，虽然可以">
+&amp;#x5F00;&amp;#x53D1;&amp;#x4E86;&amp;#x51E0;&amp;#x4E2A;&amp;#x5DE5;&amp;#x7A0B;&amp;#x540E;&amp;#xFF0C;&amp;#x8D8A;&amp;#x53D1;&amp;#x89C9;&amp;#x5F97;react-native&amp;#x5728;app&amp;#x521D;&amp;#x59CB;&amp;#x9636;&amp;#x6BB5;&amp;#x7684;&amp;#x5FEB;&amp;#x901">
   
   
     <link rel="icon" href="http://ohlmilmdr.bkt.clouddn.com/images/head.jpeg">
@@ -255,10 +255,10 @@
       
           
         <blockquote>
-<p>痛点</p>
+<p>&#x75DB;&#x70B9;</p>
 </blockquote>
-<p>开发了几个工程后，越发觉得react-native在app初始阶段的快速迭代开发有不十分巨大的优势。然而开发中遇到的问题也比较多，例如性能问题，组件问题，主题问题，开发规范问题，多人协作问题等等。<br>今天主要说下主题的问题吧。<br>在很多开发中，我们都需要指定一些通用的页面式样，比如：背景颜色，标题字体大小及颜色，默认字体等等。这些听起来在css上很容易实现，但是在RN上却不能简单的做到，<code>虽然可以创建一个通用的MyText这种组件，然后在app中广泛使用它</code>，但是这满足改变我们对主体化和全局式样的需求。</p>
-<p>好在github上已经出现了一些kit组件库的开源项目，里面关于主题化的想法很不错，在这里结合自己的理解总结一下。</p>
+<p>&#x5F00;&#x53D1;&#x4E86;&#x51E0;&#x4E2A;&#x5DE5;&#x7A0B;&#x540E;&#xFF0C;&#x8D8A;&#x53D1;&#x89C9;&#x5F97;react-native&#x5728;app&#x521D;&#x59CB;&#x9636;&#x6BB5;&#x7684;&#x5FEB;&#x901F;&#x8FED;&#x4EE3;&#x5F00;&#x53D1;&#x6709;&#x4E0D;&#x5341;&#x5206;&#x5DE8;&#x5927;&#x7684;&#x4F18;&#x52BF;&#x3002;&#x7136;&#x800C;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x4E5F;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x4F8B;&#x5982;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x7EC4;&#x4EF6;&#x95EE;&#x9898;&#xFF0C;&#x4E3B;&#x9898;&#x95EE;&#x9898;&#xFF0C;&#x5F00;&#x53D1;&#x89C4;&#x8303;&#x95EE;&#x9898;&#xFF0C;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x95EE;&#x9898;&#x7B49;&#x7B49;&#x3002;<br>&#x4ECA;&#x5929;&#x4E3B;&#x8981;&#x8BF4;&#x4E0B;&#x4E3B;&#x9898;&#x7684;&#x95EE;&#x9898;&#x5427;&#x3002;<br>&#x5728;&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x7684;&#x9875;&#x9762;&#x5F0F;&#x6837;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x80CC;&#x666F;&#x989C;&#x8272;&#xFF0C;&#x6807;&#x9898;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x53CA;&#x989C;&#x8272;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E9B;&#x542C;&#x8D77;&#x6765;&#x5728;css&#x4E0A;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x662F;&#x5728;RN&#x4E0A;&#x5374;&#x4E0D;&#x80FD;&#x7B80;&#x5355;&#x7684;&#x505A;&#x5230;&#xFF0C;<code>&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;MyText&#x8FD9;&#x79CD;&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x5728;app&#x4E2D;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x5B83;</code>&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6EE1;&#x8DB3;&#x6539;&#x53D8;&#x6211;&#x4EEC;&#x5BF9;&#x4E3B;&#x4F53;&#x5316;&#x548C;&#x5168;&#x5C40;&#x5F0F;&#x6837;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x597D;&#x5728;github&#x4E0A;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x4E86;&#x4E00;&#x4E9B;kit&#x7EC4;&#x4EF6;&#x5E93;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x91CC;&#x9762;&#x5173;&#x4E8E;&#x4E3B;&#x9898;&#x5316;&#x7684;&#x60F3;&#x6CD5;&#x5F88;&#x4E0D;&#x9519;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x7ED3;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x7406;&#x89E3;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x3002;</p>
 
       
     </div>

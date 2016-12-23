@@ -311,13 +311,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="github加速"><a href="#github加速" class="headerlink" title="github加速"></a>github加速</h1><p>一般Github的访问有两部分：主站的访问和二级域名的资源加载（比如样式文件等）。</p>
-<p>为什么慢？因为github的CDN被某墙屏了。</p>
-<p>那么有vpn服务的可以直接使用vpn，没有vpn的，可以绕过dns解析，在本地直接绑定host</p>
+        <h1 id="github&#x52A0;&#x901F;"><a href="#github&#x52A0;&#x901F;" class="headerlink" title="github&#x52A0;&#x901F;"></a>github&#x52A0;&#x901F;</h1><p>&#x4E00;&#x822C;Github&#x7684;&#x8BBF;&#x95EE;&#x6709;&#x4E24;&#x90E8;&#x5206;&#xFF1A;&#x4E3B;&#x7AD9;&#x7684;&#x8BBF;&#x95EE;&#x548C;&#x4E8C;&#x7EA7;&#x57DF;&#x540D;&#x7684;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#xFF08;&#x6BD4;&#x5982;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x6162;&#xFF1F;&#x56E0;&#x4E3A;github&#x7684;CDN&#x88AB;&#x67D0;&#x5899;&#x5C4F;&#x4E86;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x6709;vpn&#x670D;&#x52A1;&#x7684;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;vpn&#xFF0C;&#x6CA1;&#x6709;vpn&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;dns&#x89E3;&#x6790;&#xFF0C;&#x5728;&#x672C;&#x5730;&#x76F4;&#x63A5;&#x7ED1;&#x5B9A;host</p>
 <blockquote>
-<p>找到最快的ip</p>
+<p>&#x627E;&#x5230;&#x6700;&#x5FEB;&#x7684;ip</p>
 </blockquote>
-<p>用站长工具的DNS查询，查找tel最小的IP地址</p>
+<p>&#x7528;&#x7AD9;&#x957F;&#x5DE5;&#x5177;&#x7684;DNS&#x67E5;&#x8BE2;&#xFF0C;&#x67E5;&#x627E;tel&#x6700;&#x5C0F;&#x7684;IP&#x5730;&#x5740;</p>
 <ul>
 <li>192.30.253.113 www.github.com</li>
 <li>151.101.192.133 documentcloud.github.com</li>
@@ -334,11 +334,11 @@
 <li>151.101.88.249 github.global.ssl.fastly.net</li>
 </ul>
 <blockquote>
-<p>修改hosts</p>
+<p>&#x4FEE;&#x6539;hosts</p>
 </blockquote>
-<p>1.在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑</p>
-<p>2.插入上述查找到的ip地址</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># github</div><div class="line">192.30.253.113 www.github.com</div><div class="line">151.101.192.133 documentcloud.github.com</div><div class="line">192.30.253.113 github.com</div><div class="line">151.101.192.133 assets-cdn.github.com</div><div class="line">151.101.192.133 avatars0.githubusercontent.com</div><div class="line">151.101.192.133 avatars1.githubusercontent.com</div><div class="line">8.7.198.45 gist.github.com</div><div class="line">151.101.192.133 help.github.com</div><div class="line">192.30.253.121 nodeload.github.com</div><div class="line">151.101.192.133 raw.github.com</div><div class="line">23.21.205.246 status.github.com</div><div class="line">151.101.100.133 training.github.com</div><div class="line">151.101.88.249 github.global.ssl.fastly.net</div></pre></td></tr></table></figure>
+<p>1.&#x5728;&#x7EC8;&#x7AEF;&#x6267;&#x884C;&#x6307;&#x4EE4;sudo vi /etc/hosts&#x6253;&#x5F00;hosts&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</p>
+<p>2.&#x63D2;&#x5165;&#x4E0A;&#x8FF0;&#x67E5;&#x627E;&#x5230;&#x7684;ip&#x5730;&#x5740;</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># <span class="selector-tag">github</span></div><div class="line">192<span class="selector-class">.30</span><span class="selector-class">.253</span><span class="selector-class">.113</span> <span class="selector-tag">www</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.192</span><span class="selector-class">.133</span> <span class="selector-tag">documentcloud</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">192<span class="selector-class">.30</span><span class="selector-class">.253</span><span class="selector-class">.113</span> <span class="selector-tag">github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.192</span><span class="selector-class">.133</span> <span class="selector-tag">assets-cdn</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.192</span><span class="selector-class">.133</span> <span class="selector-tag">avatars0</span><span class="selector-class">.githubusercontent</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.192</span><span class="selector-class">.133</span> <span class="selector-tag">avatars1</span><span class="selector-class">.githubusercontent</span><span class="selector-class">.com</span></div><div class="line">8<span class="selector-class">.7</span><span class="selector-class">.198</span><span class="selector-class">.45</span> <span class="selector-tag">gist</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.192</span><span class="selector-class">.133</span> <span class="selector-tag">help</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">192<span class="selector-class">.30</span><span class="selector-class">.253</span><span class="selector-class">.121</span> <span class="selector-tag">nodeload</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.192</span><span class="selector-class">.133</span> <span class="selector-tag">raw</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">23<span class="selector-class">.21</span><span class="selector-class">.205</span><span class="selector-class">.246</span> <span class="selector-tag">status</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.100</span><span class="selector-class">.133</span> <span class="selector-tag">training</span><span class="selector-class">.github</span><span class="selector-class">.com</span></div><div class="line">151<span class="selector-class">.101</span><span class="selector-class">.88</span><span class="selector-class">.249</span> <span class="selector-tag">github</span><span class="selector-class">.global</span><span class="selector-class">.ssl</span><span class="selector-class">.fastly</span><span class="selector-class">.net</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -399,37 +399,37 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>#RN项目框架搭建</p>
+        <p>#RN&#x9879;&#x76EE;&#x6846;&#x67B6;&#x642D;&#x5EFA;</p>
 <blockquote>
-<p>主框架</p>
+<p>&#x4E3B;&#x6846;&#x67B6;</p>
 </blockquote>
 <ul>
-<li>采用<code>react-native + react-redux + axios</code>分别实现视图层、逻辑层、数据通信层；</li>
-<li>采用<code>realm + storage</code>做本地存储；</li>
-<li>采用<code>react-native-router-flux</code>实现路由功能；</li>
+<li>&#x91C7;&#x7528;<code>react-native + react-redux + axios</code>&#x5206;&#x522B;&#x5B9E;&#x73B0;&#x89C6;&#x56FE;&#x5C42;&#x3001;&#x903B;&#x8F91;&#x5C42;&#x3001;&#x6570;&#x636E;&#x901A;&#x4FE1;&#x5C42;&#xFF1B;</li>
+<li>&#x91C7;&#x7528;<code>realm + storage</code>&#x505A;&#x672C;&#x5730;&#x5B58;&#x50A8;&#xFF1B;</li>
+<li>&#x91C7;&#x7528;<code>react-native-router-flux</code>&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x529F;&#x80FD;&#xFF1B;</li>
 </ul>
 <blockquote>
-<p>目录结构</p>
+<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
 </blockquote>
 <ul>
 <li>app<ul>
-<li>assets <em>图片资源</em></li>
-<li>component <em>组件</em></li>
-<li>core <em>核心组件</em></li>
-<li>pages <em>页面</em></li>
-<li>theme <em>主题</em></li>
-<li>utils <em>工具类</em></li>
+<li>assets <em>&#x56FE;&#x7247;&#x8D44;&#x6E90;</em></li>
+<li>component <em>&#x7EC4;&#x4EF6;</em></li>
+<li>core <em>&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;</em></li>
+<li>pages <em>&#x9875;&#x9762;</em></li>
+<li>theme <em>&#x4E3B;&#x9898;</em></li>
+<li>utils <em>&#x5DE5;&#x5177;&#x7C7B;</em></li>
 </ul>
 </li>
 <li>biz<ul>
-<li>actions <em>请求action</em></li>
-<li>api <em>api接口</em></li>
-<li>entity <em>本地存储entity</em></li>
-<li>middleware <em>redux中间件</em></li>
-<li>reducers <em>redux的reducer</em></li>
-<li>repository <em>本地存储</em></li>
-<li>socket <em>socket封装</em></li>
-<li>errors <em>请求错误处理</em></li>
+<li>actions <em>&#x8BF7;&#x6C42;action</em></li>
+<li>api <em>api&#x63A5;&#x53E3;</em></li>
+<li>entity <em>&#x672C;&#x5730;&#x5B58;&#x50A8;entity</em></li>
+<li>middleware <em>redux&#x4E2D;&#x95F4;&#x4EF6;</em></li>
+<li>reducers <em>redux&#x7684;reducer</em></li>
+<li>repository <em>&#x672C;&#x5730;&#x5B58;&#x50A8;</em></li>
+<li>socket <em>socket&#x5C01;&#x88C5;</em></li>
+<li>errors <em>&#x8BF7;&#x6C42;&#x9519;&#x8BEF;&#x5904;&#x7406;</em></li>
 </ul>
 </li>
 </ul>
@@ -496,10 +496,10 @@
       
           
         <blockquote>
-<p>痛点</p>
+<p>&#x75DB;&#x70B9;</p>
 </blockquote>
-<p>开发了几个工程后，越发觉得react-native在app初始阶段的快速迭代开发有不十分巨大的优势。然而开发中遇到的问题也比较多，例如性能问题，组件问题，主题问题，开发规范问题，多人协作问题等等。<br>今天主要说下主题的问题吧。<br>在很多开发中，我们都需要指定一些通用的页面式样，比如：背景颜色，标题字体大小及颜色，默认字体等等。这些听起来在css上很容易实现，但是在RN上却不能简单的做到，<code>虽然可以创建一个通用的MyText这种组件，然后在app中广泛使用它</code>，但是这满足改变我们对主体化和全局式样的需求。</p>
-<p>好在github上已经出现了一些kit组件库的开源项目，里面关于主题化的想法很不错，在这里结合自己的理解总结一下。</p>
+<p>&#x5F00;&#x53D1;&#x4E86;&#x51E0;&#x4E2A;&#x5DE5;&#x7A0B;&#x540E;&#xFF0C;&#x8D8A;&#x53D1;&#x89C9;&#x5F97;react-native&#x5728;app&#x521D;&#x59CB;&#x9636;&#x6BB5;&#x7684;&#x5FEB;&#x901F;&#x8FED;&#x4EE3;&#x5F00;&#x53D1;&#x6709;&#x4E0D;&#x5341;&#x5206;&#x5DE8;&#x5927;&#x7684;&#x4F18;&#x52BF;&#x3002;&#x7136;&#x800C;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x4E5F;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x4F8B;&#x5982;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x7EC4;&#x4EF6;&#x95EE;&#x9898;&#xFF0C;&#x4E3B;&#x9898;&#x95EE;&#x9898;&#xFF0C;&#x5F00;&#x53D1;&#x89C4;&#x8303;&#x95EE;&#x9898;&#xFF0C;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x95EE;&#x9898;&#x7B49;&#x7B49;&#x3002;<br>&#x4ECA;&#x5929;&#x4E3B;&#x8981;&#x8BF4;&#x4E0B;&#x4E3B;&#x9898;&#x7684;&#x95EE;&#x9898;&#x5427;&#x3002;<br>&#x5728;&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x7684;&#x9875;&#x9762;&#x5F0F;&#x6837;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x80CC;&#x666F;&#x989C;&#x8272;&#xFF0C;&#x6807;&#x9898;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x53CA;&#x989C;&#x8272;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E9B;&#x542C;&#x8D77;&#x6765;&#x5728;css&#x4E0A;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x662F;&#x5728;RN&#x4E0A;&#x5374;&#x4E0D;&#x80FD;&#x7B80;&#x5355;&#x7684;&#x505A;&#x5230;&#xFF0C;<code>&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;MyText&#x8FD9;&#x79CD;&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x5728;app&#x4E2D;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x5B83;</code>&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6EE1;&#x8DB3;&#x6539;&#x53D8;&#x6211;&#x4EEC;&#x5BF9;&#x4E3B;&#x4F53;&#x5316;&#x548C;&#x5168;&#x5C40;&#x5F0F;&#x6837;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x597D;&#x5728;github&#x4E0A;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x4E86;&#x4E00;&#x4E9B;kit&#x7EC4;&#x4EF6;&#x5E93;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x91CC;&#x9762;&#x5173;&#x4E8E;&#x4E3B;&#x9898;&#x5316;&#x7684;&#x60F3;&#x6CD5;&#x5F88;&#x4E0D;&#x9519;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x7ED3;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x7406;&#x89E3;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x3002;</p>
 
       
     </div>
@@ -560,9 +560,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="博客这东西"><a href="#博客这东西" class="headerlink" title="博客这东西"></a>博客这东西</h1><p>记得上次写博客还是6年前了，然后去创业后就再也没有时间写这东西了！时间不由己啊！</p>
-<p>从开这东西的想法其实很简单：年纪大了，很多东西都记不住了！前几天翻看收藏夹，发现：『我艹，这东西我以前看过』？不得不说，过了30后记忆力减退是真的~</p>
-<p>为了应对这一问题，我就想起了博客。可是发现以前的帐号已经不知什么时候注销掉了，正好同事说github上面搭博客挺方便的，就有了现在这个page。</p>
+        <h1 id="&#x535A;&#x5BA2;&#x8FD9;&#x4E1C;&#x897F;"><a href="#&#x535A;&#x5BA2;&#x8FD9;&#x4E1C;&#x897F;" class="headerlink" title="&#x535A;&#x5BA2;&#x8FD9;&#x4E1C;&#x897F;"></a>&#x535A;&#x5BA2;&#x8FD9;&#x4E1C;&#x897F;</h1><p>&#x8BB0;&#x5F97;&#x4E0A;&#x6B21;&#x5199;&#x535A;&#x5BA2;&#x8FD8;&#x662F;6&#x5E74;&#x524D;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x53BB;&#x521B;&#x4E1A;&#x540E;&#x5C31;&#x518D;&#x4E5F;&#x6CA1;&#x6709;&#x65F6;&#x95F4;&#x5199;&#x8FD9;&#x4E1C;&#x897F;&#x4E86;&#xFF01;&#x65F6;&#x95F4;&#x4E0D;&#x7531;&#x5DF1;&#x554A;&#xFF01;</p>
+<p>&#x4ECE;&#x5F00;&#x8FD9;&#x4E1C;&#x897F;&#x7684;&#x60F3;&#x6CD5;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF1A;&#x5E74;&#x7EAA;&#x5927;&#x4E86;&#xFF0C;&#x5F88;&#x591A;&#x4E1C;&#x897F;&#x90FD;&#x8BB0;&#x4E0D;&#x4F4F;&#x4E86;&#xFF01;&#x524D;&#x51E0;&#x5929;&#x7FFB;&#x770B;&#x6536;&#x85CF;&#x5939;&#xFF0C;&#x53D1;&#x73B0;&#xFF1A;&#x300E;&#x6211;&#x8279;&#xFF0C;&#x8FD9;&#x4E1C;&#x897F;&#x6211;&#x4EE5;&#x524D;&#x770B;&#x8FC7;&#x300F;&#xFF1F;&#x4E0D;&#x5F97;&#x4E0D;&#x8BF4;&#xFF0C;&#x8FC7;&#x4E86;30&#x540E;&#x8BB0;&#x5FC6;&#x529B;&#x51CF;&#x9000;&#x662F;&#x771F;&#x7684;~</p>
+<p>&#x4E3A;&#x4E86;&#x5E94;&#x5BF9;&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x5C31;&#x60F3;&#x8D77;&#x4E86;&#x535A;&#x5BA2;&#x3002;&#x53EF;&#x662F;&#x53D1;&#x73B0;&#x4EE5;&#x524D;&#x7684;&#x5E10;&#x53F7;&#x5DF2;&#x7ECF;&#x4E0D;&#x77E5;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x6CE8;&#x9500;&#x6389;&#x4E86;&#xFF0C;&#x6B63;&#x597D;&#x540C;&#x4E8B;&#x8BF4;github&#x4E0A;&#x9762;&#x642D;&#x535A;&#x5BA2;&#x633A;&#x65B9;&#x4FBF;&#x7684;&#xFF0C;&#x5C31;&#x6709;&#x4E86;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;page&#x3002;</p>
 
       
     </div>
