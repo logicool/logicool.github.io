@@ -17,15 +17,15 @@ Context&amp;#x662F;react@0.14&amp;#x4EE5;&amp;#x540E;&amp;#x53D1;&amp;#x5E03;&am
 &amp;#x5199;&amp;#x5728;&amp;#x524D;&amp;#x9762;&amp;#x7684;&amp;#x8BDD;
 
 Context&amp;#x662F;react@0.14&amp;#x4EE5;&amp;#x540E;&amp;#x53D1;&amp;#x5E03;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x5148;&amp;#x8FDB;&amp;#x6613;&amp;#x53D8;&amp;#x7279;">
-<meta property="og:image" content="https://logicool.github.io/2016/12/23/React组件开发中的神器/assets/1.png">
-<meta property="og:updated_time" content="2016-12-23T03:49:34.000Z">
+<meta property="og:image" content="https://logicool.github.io/2016/12/23/React组件开发中的神器/source/img/1.png">
+<meta property="og:updated_time" content="2016-12-23T03:53:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React组件开发中的神器">
 <meta name="twitter:description" content="React&amp;#x4E2D;&amp;#x7684;Context
 &amp;#x5199;&amp;#x5728;&amp;#x524D;&amp;#x9762;&amp;#x7684;&amp;#x8BDD;
 
 Context&amp;#x662F;react@0.14&amp;#x4EE5;&amp;#x540E;&amp;#x53D1;&amp;#x5E03;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x5148;&amp;#x8FDB;&amp;#x6613;&amp;#x53D8;&amp;#x7279;">
-<meta name="twitter:image" content="https://logicool.github.io/2016/12/23/React组件开发中的神器/assets/1.png">
+<meta name="twitter:image" content="https://logicool.github.io/2016/12/23/React组件开发中的神器/source/img/1.png">
   
   
     <link rel="icon" href="http://ohlmilmdr.bkt.clouddn.com/images/head.jpeg">
@@ -271,7 +271,7 @@ Context&amp;#x662F;react@0.14&amp;#x4EE5;&amp;#x540E;&amp;#x53D1;&amp;#x5E03;&am
 <blockquote>
 <p>&#x5047;&#x5982;&#x6211;&#x4EEC;&#x6709;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x7684;&#x7EC4;&#x4EF6;&#x7ED3;&#x6784;</p>
 </blockquote>
-<p><img src="/2016/12/23/React&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x795E;&#x5668;/assets/1.png" alt="image"></p>
+<p><img src="/2016/12/23/React&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x795E;&#x5668;/source/img/1.png" alt="image"></p>
 <p>F&#x7EC4;&#x4EF6;&#x8981;&#x83B7;&#x53D6;A&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;&#x8BBE;&#x7F6E;&#x4FE1;&#x606F;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x80AF;&#x5B9A;&#x4E0D;&#x80FD;&#x4E00;&#x5C42;&#x5C42;&#x7684;&#x5199;props&#x4F20;&#x9012;&#x554A;&#xFF0C;&#x7A0B;&#x5E8F;&#x733F;&#x90FD;&#x5F88;&#x61D2;&#x7684;&#x597D;&#x4F10;~</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> A = React.createClass({</div><div class="line">  <span class="attr">childContextTypes</span>: {</div><div class="line">    <span class="attr">setting</span>: React.PropTypes.object.isRequired</div><div class="line">  },</div><div class="line">  <span class="attr">getChildContext</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</div><div class="line">    <span class="keyword">return</span> {<span class="attr">setting</span>: <span class="keyword">this</span>.state.setting};</div><div class="line">  },</div><div class="line">  <span class="attr">render</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</div><div class="line">    <span class="keyword">return</span> &lt;div&gt;{this.props.children}&lt;/div&gt;;</div><div class="line">  }</div><div class="line">});</div><div class="line"><span class="comment">/**</span></div><div class="line">B...</div><div class="line">C...</div><div class="line">D...</div><div class="line">E...</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> F = React.createClass({</div><div class="line">  <span class="attr">contextTypes</span>: {</div><div class="line">    <span class="attr">setting</span>: React.PropTypes.object.isRequired</div><div class="line">  },</div><div class="line">  <span class="attr">render</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">    	&lt;div&gt;{this.context.setting.info}&lt;/div&gt;</div><div class="line">    );</div><div class="line">  }</div><div class="line">});</div></pre></td></tr></table></figure>
 <p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x7B80;&#x5355;&#xFF1F;&#x53EA;&#x8981;&#x5728;&#x5916;&#x5C42;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;getChildContext&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x7236;&#x5C42;&#x548C;&#x91CC;&#x5C42;&#x5206;&#x522B;&#x5236;&#x5B9A;contextTypes&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x91CC;&#x5C42;&#x7528;this.context&#x8BBF;&#x95EE;&#x4E86;&#x3002;</p>
@@ -287,7 +287,7 @@ Context&amp;#x662F;react@0.14&amp;#x4EE5;&amp;#x540E;&amp;#x53D1;&amp;#x5E03;&am
         <p><span>本文标题:</span><a href="/2016/12/23/React组件开发中的神器/">React组件开发中的神器</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Han Gao 的个人博客">Han Gao</a></p>
         <p><span>发布时间:</span>2016年12月23日 - 10时54分</p>
-        <p><span>最后更新:</span>2016年12月23日 - 11时49分</p>
+        <p><span>最后更新:</span>2016年12月23日 - 11时53分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/12/23/React组件开发中的神器/" title="React组件开发中的神器">https://logicool.github.io/2016/12/23/React组件开发中的神器/</a>
             <span class="copy-path" data-clipboard-text="原文: https://logicool.github.io/2016/12/23/React组件开发中的神器/　　作者: Han Gao" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
