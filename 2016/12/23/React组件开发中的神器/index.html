@@ -3,45 +3,44 @@
 <head>
   <meta charset="utf-8">
   
-  <title>github加速 | logicool</title>
+  <title>React组件开发中的神器 | logicool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="github加速一般Github的访问有两部分：主站的访问和二级域名的资源加载（比如样式文件等）。
-为什么慢？因为github的CDN被某墙屏了。
-那么有vpn服务的可以直接使用vpn，没有vpn的，可以绕过dns解析，在本地直接绑定host
+  <meta name="description" content="React中的Context
+写在前面的话
 
-找到最快的ip
+Context是react@0.14以后发布的一个先进易变特性，它的API很可能会在未来的版本里改动。context有点儿像全局变量，使用它会使代码不够清晰。
 
-用站长工具的DNS查询，查找tel最小的IP地址
+我是正文
 
-192.30.253.113 www.github.com
-151.101.192.">
+首先，既然有可能变动，那么为什么还要用context？context有什么用？
+好吧，其实context主要用在react组件间内部传递props用。那直接用props传递不是更好">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github加速">
-<meta property="og:url" content="https://logicool.github.io/2016/12/22/github加速/index.html">
+<meta property="og:title" content="React组件开发中的神器">
+<meta property="og:url" content="https://logicool.github.io/2016/12/23/React组件开发中的神器/index.html">
 <meta property="og:site_name" content="logicool">
-<meta property="og:description" content="github加速一般Github的访问有两部分：主站的访问和二级域名的资源加载（比如样式文件等）。
-为什么慢？因为github的CDN被某墙屏了。
-那么有vpn服务的可以直接使用vpn，没有vpn的，可以绕过dns解析，在本地直接绑定host
+<meta property="og:description" content="React中的Context
+写在前面的话
 
-找到最快的ip
+Context是react@0.14以后发布的一个先进易变特性，它的API很可能会在未来的版本里改动。context有点儿像全局变量，使用它会使代码不够清晰。
 
-用站长工具的DNS查询，查找tel最小的IP地址
+我是正文
 
-192.30.253.113 www.github.com
-151.101.192.">
-<meta property="og:updated_time" content="2016-12-22T08:54:37.000Z">
+首先，既然有可能变动，那么为什么还要用context？context有什么用？
+好吧，其实context主要用在react组件间内部传递props用。那直接用props传递不是更好">
+<meta property="og:image" content="https://logicool.github.io/assets/1.png">
+<meta property="og:updated_time" content="2016-12-23T03:39:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github加速">
-<meta name="twitter:description" content="github加速一般Github的访问有两部分：主站的访问和二级域名的资源加载（比如样式文件等）。
-为什么慢？因为github的CDN被某墙屏了。
-那么有vpn服务的可以直接使用vpn，没有vpn的，可以绕过dns解析，在本地直接绑定host
+<meta name="twitter:title" content="React组件开发中的神器">
+<meta name="twitter:description" content="React中的Context
+写在前面的话
 
-找到最快的ip
+Context是react@0.14以后发布的一个先进易变特性，它的API很可能会在未来的版本里改动。context有点儿像全局变量，使用它会使代码不够清晰。
 
-用站长工具的DNS查询，查找tel最小的IP地址
+我是正文
 
-192.30.253.113 www.github.com
-151.101.192.">
+首先，既然有可能变动，那么为什么还要用context？context有什么用？
+好吧，其实context主要用在react组件间内部传递props用。那直接用props传递不是更好">
+<meta name="twitter:image" content="https://logicool.github.io/assets/1.png">
   
   
     <link rel="icon" href="http://ohlmilmdr.bkt.clouddn.com/images/head.jpeg">
@@ -233,11 +232,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-github加速" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-React组件开发中的神器" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/12/22/github加速/" class="article-date">
-      <time datetime="2016-12-22T08:15:16.000Z" itemprop="datePublished">2016-12-22</time>
+      <a href="/2016/12/23/React组件开发中的神器/" class="article-date">
+      <time datetime="2016-12-23T02:54:52.000Z" itemprop="datePublished">2016-12-23</time>
 </a>
     </div>
   
@@ -250,7 +249,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      github加速
+      React组件开发中的神器
     </h1>
   
 
@@ -265,7 +264,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ReactNative/">ReactNative</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -275,35 +274,24 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="github加速"><a href="#github加速" class="headerlink" title="github加速"></a>github加速</h1><p>一般Github的访问有两部分：主站的访问和二级域名的资源加载（比如样式文件等）。</p>
-<p>为什么慢？因为github的CDN被某墙屏了。</p>
-<p>那么有vpn服务的可以直接使用vpn，没有vpn的，可以绕过dns解析，在本地直接绑定host</p>
-<blockquote>
-<p>找到最快的ip</p>
+        <h1 id="React中的Context"><a href="#React中的Context" class="headerlink" title="React中的Context"></a>React中的Context</h1><blockquote>
+<p>写在前面的话</p>
 </blockquote>
-<p>用站长工具的DNS查询，查找tel最小的IP地址</p>
-<ul>
-<li>192.30.253.113 www.github.com</li>
-<li>151.101.192.133 documentcloud.github.com</li>
-<li>192.30.253.113 github.com</li>
-<li>151.101.192.133 assets-cdn.github.com</li>
-<li>151.101.192.133 avatars0.githubusercontent.com </li>
-<li>151.101.192.133 avatars1.githubusercontent.com </li>
-<li>8.7.198.45 gist.github.com</li>
-<li>151.101.192.133 help.github.com</li>
-<li>192.30.253.121 nodeload.github.com</li>
-<li>151.101.192.133 raw.github.com</li>
-<li>23.21.205.246 status.github.com</li>
-<li>151.101.100.133 training.github.com</li>
-<li>151.101.88.249 github.global.ssl.fastly.net</li>
-</ul>
+<p>Context是react@0.14以后发布的一个先进易变特性，它的API很可能会在未来的版本里改动。context有点儿像全局变量，使用它会使代码不够清晰。</p>
 <blockquote>
-<p>修改hosts</p>
+<p>我是正文</p>
 </blockquote>
-<p>1.在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑</p>
-<p>2.插入上述查找到的ip地址</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># github</div><div class="line">192.30.253.113 www.github.com</div><div class="line">151.101.192.133 documentcloud.github.com</div><div class="line">192.30.253.113 github.com</div><div class="line">151.101.192.133 assets-cdn.github.com</div><div class="line">151.101.192.133 avatars0.githubusercontent.com</div><div class="line">151.101.192.133 avatars1.githubusercontent.com</div><div class="line">8.7.198.45 gist.github.com</div><div class="line">151.101.192.133 help.github.com</div><div class="line">192.30.253.121 nodeload.github.com</div><div class="line">151.101.192.133 raw.github.com</div><div class="line">23.21.205.246 status.github.com</div><div class="line">151.101.100.133 training.github.com</div><div class="line">151.101.88.249 github.global.ssl.fastly.net</div></pre></td></tr></table></figure>
-
+<p>首先，既然有可能变动，那么为什么还要用context？context有什么用？</p>
+<p>好吧，其实context主要用在react组件间内部传递props用。那直接用props传递不是更好？问题就在这里，假设我们的应用页面很复杂，用到了多个组件，并且组件之间多层级嵌套，那么通过props一层层的传递当然没有问题，只是太过麻烦了，这个时候context的优势就体现出来了。</p>
+<blockquote>
+<p>假如我们有下面这样的组件结构</p>
+</blockquote>
+<p><img src="assets/1.png" alt=""></p>
+<p>F组件要获取A组件中的设置信息怎么办？肯定不能一层层的写props传递啊，程序猿都很懒的好伐~</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> A = React.createClass(&#123;</div><div class="line">  <span class="attr">childContextTypes</span>: &#123;</div><div class="line">    <span class="attr">setting</span>: React.PropTypes.object.isRequired</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">getChildContext</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &#123;<span class="attr">setting</span>: <span class="keyword">this</span>.state.setting&#125;;</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">render</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> &lt;div&gt;&#123;this.props.children&#125;&lt;/div&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"><span class="comment">/**</span></div><div class="line">B...</div><div class="line">C...</div><div class="line">D...</div><div class="line">E...</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> F = React.createClass(&#123;</div><div class="line">  <span class="attr">contextTypes</span>: &#123;</div><div class="line">    <span class="attr">setting</span>: React.PropTypes.object.isRequired</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">render</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">    	&lt;div&gt;&#123;this.context.setting.info&#125;&lt;/div&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>是不是很简单？只要在外层定义一个getChildContext方法，在父层和里层分别制定contextTypes就可以直接在里层用this.context访问了。</p>
+<p>另外官方文档上说，context也可以在生命周期里引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">constructor(props, context)</div><div class="line">componentWillReceiveProps(nextProps, nextContext)</div><div class="line">shouldComponentUpdate(nextProps, nextState, nextContext)</div><div class="line">componentWillUpdate(nextProps, nextState, nextContext)</div><div class="line">componentDidUpdate(prevProps, prevState, prevContext)</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -311,13 +299,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/12/22/github加速/">github加速</a></p>
+        <p><span>本文标题:</span><a href="/2016/12/23/React组件开发中的神器/">React组件开发中的神器</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Han Gao 的个人博客">Han Gao</a></p>
-        <p><span>发布时间:</span>2016年12月22日 - 16时15分</p>
-        <p><span>最后更新:</span>2016年12月22日 - 16时54分</p>
+        <p><span>发布时间:</span>2016年12月23日 - 10时54分</p>
+        <p><span>最后更新:</span>2016年12月23日 - 11时39分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/12/22/github加速/" title="github加速">https://logicool.github.io/2016/12/22/github加速/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://logicool.github.io/2016/12/22/github加速/　　作者: Han Gao" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/23/React组件开发中的神器/" title="React组件开发中的神器">https://logicool.github.io/2016/12/23/React组件开发中的神器/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://logicool.github.io/2016/12/23/React组件开发中的神器/　　作者: Han Gao" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -330,16 +318,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/12/23/React组件开发中的神器/">
-                    React组件开发中的神器
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/12/22/RN项目框架搭建/">
-                    RN项目框架搭建
+                <a href="/2016/12/22/github加速/">
+                    github加速
                 </a>
             </div>
         
@@ -350,7 +332,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github加速"><span class="toc-number">1.</span> <span class="toc-text">github加速</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#React中的Context"><span class="toc-number">1.</span> <span class="toc-text">React中的Context</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -414,7 +396,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/12/22/github加速/" data-title="github加速" data-url="https://logicool.github.io/2016/12/22/github加速/"></div>
+    <div class="ds-thread" data-thread-key="2016/12/23/React组件开发中的神器/" data-title="React组件开发中的神器" data-url="https://logicool.github.io/2016/12/23/React组件开发中的神器/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -438,15 +420,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/12/23/React组件开发中的神器/" title="上一篇: React组件开发中的神器">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/12/22/RN项目框架搭建/" title="下一篇: RN项目框架搭建">
+            <a href="/2016/12/22/github加速/" title="下一篇: github加速">
                 <i class="fa fa-angle-right"></i>
             </a>
         
