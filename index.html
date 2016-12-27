@@ -276,6 +276,26 @@
 <li>&#x4F7F;&#x7528;<code>rebase</code>&#x547D;&#x4EE4;&#x5408;&#x5E76;&#x5206;&#x652F;&#xFF0C;&#x89E3;&#x51B3;&#x5B8C;&#x51B2;&#x7A81;&#xFF0C;&#x6267;&#x884C;<code>git add</code>&#x548C;<code>git rebase --continue</code>&#xFF0C;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x989D;&#x5916;&#x7684;commit&#x3002;&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x662F;&#x2018;&#x5E72;&#x51C0;&#x2019;&#xFF0C;&#x5206;&#x652F;&#x4E0A;&#x4E0D;&#x4F1A;&#x6709;&#x65E0;&#x610F;&#x4E49;&#x7684;&#x89E3;&#x51B3;&#x5206;&#x652F;&#x7684;commit&#x3002;</li>
 <li>merge&#x663E;&#x6027;&#x7684;&#x5904;&#x7406;&#x51B2;&#x7A81;&#xFF0C;rebase&#x9690;&#x6027;&#x7684;&#x5904;&#x7406;&#x51B2;&#x7A81;&#x3002;</li>
 </ul>
+<blockquote>
+<p>&#x8865;&#x5145;&#xFF1A;fork&#x540E;clone&#x4E0B;&#x6765;&#x7684;&#x9879;&#x76EE;&#x5982;&#x4F55;&#x4FDD;&#x6301;&#x4E0E;&#x539F;&#x9879;&#x76EE;&#x540C;&#x6B65;&#xFF1F;</p>
+</blockquote>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5728;github&#x4E0A;fork&#x51FA;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x539F;&#x6709;&#x7684;&#x9879;&#x76EE;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x600E;&#x6837;&#x4FDD;&#x6301;&#x6211;&#x4EEC;fork&#x51FA;&#x6765;&#x7684;&#x9879;&#x76EE;&#x548C;&#x539F;&#x6709;&#x9879;&#x76EE;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x5462;&#x5E76;&#x63D0;&#x4EA4;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x66F4;&#x65B0;&#x5462;&#xFF1F;</p>
+<ol>
+<li><p>&#x5728;Fork&#x7684;&#x4EE3;&#x7801;&#x5E93;&#x4E2D;&#x6DFB;&#x52A0;&#x4E0A;&#x6E38;&#x4EE3;&#x7801;&#x5E93;&#x7684;remote&#x6E90;&#xFF0C;&#x8BE5;&#x64CD;&#x4F5C;&#x53EA;&#x9700;&#x64CD;&#x4F5C;&#x4E00;&#x6B21;&#x5373;&#x53EF;&#xFF1A;(P.S. &#x5176;&#x4E2D;# upstream &#x8868;&#x793A;&#x4E0A;&#x6E38;&#x4EE3;&#x7801;&#x5E93;&#x540D;&#xFF0C; &#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x3002;)</p>
+ <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote <span class="keyword">add</span><span class="bash"> upstream &lt;&#x539F;&#x4F5C;&#x8005;&#x9879;&#x76EE;&#x7684;URL&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x5C06;&#x672C;&#x5730;&#x7684;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;commit</p>
+</li>
+<li><p>&#x5C06;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">git fetch upstream</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x68C0;&#x67E5;&#x672C;&#x5730;&#x4EE3;&#x7801;&#x53D8;&#x66F4;</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout <span class="literal">master</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x5408;&#x5E76;</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git merge upstream/<span class="keyword">master</span></div><div class="line"><span class="title">&#x6216;&#x8005;</span></div><div class="line">git rebase upstream/<span class="literal">master</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
 
       
     </div>
